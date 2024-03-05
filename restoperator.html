@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // first operator
+        /*
+        function sum()
+        {
+            console.log(arguments)
+            let sum = 0;
+            for(let i in arguments)
+            {
+                sum += arguments[i];
+            }
+            document.write("sum is = ",sum,"<br>");
+        }
+        sum(11,33);
+        sum(33,66,66);
+        sum(88,99,77,55);
+        */
+       // second operator
+       /*
+        function sum(data,...args)
+        {
+            document.write(`${data}`);
+            let sum = 0;
+            for(let i in args)
+            {
+                sum += args[i];
+            }
+            document.write(sum,"<br>");
+        }
+        sum("sum is = ",11,33);
+        sum("sum is = ",33,66,66);
+        */
+       // spread operator
+        function sum(data,...args)
+        {
+            document.write(`${data}`);
+            let sum = 0;
+            for(let i in args)
+            {
+                sum += args[i];
+            }
+            document.write(sum,"<br>");
+        }
+        let arr = [22,44,88,77,55];
+        sum("sum is = ",...arr);
+
+
+       
+    </script>
+</body>
+</html>

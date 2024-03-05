@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        do
+        {
+            var a = Number(prompt("Enter the first number "));
+            var b = Number(prompt("Enetr the second number"));
+            var ch = prompt("Press + for addition \nPress - for addition \nPress * for addition \nPress / for addition \nPress % for addition ");
+            switch(ch)
+            {
+                case '+':
+                console.log(`${a} + ${b} = ${a + b}`)
+                break;
+                case '-':
+                console.log(`${a} - ${b} = ${a - b}`)
+                break;
+                case '*':
+                console.log(`${a} * ${b} = ${a * b}`)
+                break;
+                case '/':
+                console.log(`${a} / ${b} = ${a / b}`)
+                break;
+                case '%':
+                console.log(`${a} % ${b} = ${a % b}`)
+                break;
+                default :
+                console.log(`Invalid choice`)
+                break;  
+
+            }
+            ch = prompt("Press n to Exit\n Press any other key to continue")
+        }while(ch!='n')
+    </script>
+</body>
+</html>

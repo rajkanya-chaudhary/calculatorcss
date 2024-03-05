@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var num = Number(prompt('Enter yoyr any number check for even or odd '));
+        var even = 0;
+        var odd = 0;
+        while(num!=0)
+        {
+            let r = num%10;
+            if(r%2==0)
+            {
+                even++;
+            }
+            else{
+                odd++;
+            }
+            num = parseInt(num/10)
+
+        }
+        document.write(`count of even number = ${even}<br>`);
+        document.write(`count of odd number = ${odd}<br>`);
+    </script>
+
+</body>
+</html>

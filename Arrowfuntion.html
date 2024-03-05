@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+    let dimpal = function (name)
+       {
+            return`hello & dimpal ${dimpal}`;
+        }
+        console.log(dimpal("hii neha how are you"));
+        */
+       // Arrow funtion
+       /*
+        let dimpal = (name) =>
+        {
+            return`hello & dimpal ${dimpal}`;
+        }
+        console.log(dimpal("hii neha how are you"));
+        */
+       // one line arrow funtion
+       let dimpal = name =>`dimpal ${name}`;
+       document.write(dimpal("dimpal",25));
+       document.write("<br>");
+       document.write(typeof dimpal);
+    </script>
+</body>
+</html>

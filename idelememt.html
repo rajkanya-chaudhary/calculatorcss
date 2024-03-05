@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function add()
+        {
+            var a,b,c,d,e,f;
+            a=parseInt(document.getElementById("num1").value)
+            b=parseInt(document.getElementById("num2").value)
+            c=a+b;
+            document.getElementById("ans").value=c;
+        }
+        function Sub()
+        {
+            var a,b,d;
+            a=parseInt(document.getElementById("num1").value)
+            b=parseInt(document.getElementById("num2").value)
+            d=a-b; 
+            document.getElementById("ans").value=d;
+        }
+        function Mul()
+        {
+            var a,b,e;
+            a=parseInt(document.getElementById("num1").value)
+            b=parseInt(document.getElementById("num2").value)
+            e=a*b;
+            document.getElementById("ans").value=e;
+        }
+        function Div()
+        {
+            var a,b,f;
+            a=parseInt(document.getElementById("num1").value)
+            b=parseInt(document.getElementById("num2").value)
+            f=a/b;
+            document.getElementById("ans").value=f;
+        }
+    </script>
+</head>
+<body>
+    Enter First:<input type="text"placeholder="Enter no1"id="num1">
+    <br><br>
+    Enter Second:<input type="text"placeholder="Enter no2"id="num2">
+    <br><br>
+    Result:<input type="text"id="ans">
+    <br><br>
+    <button type="button"onclick="add()">Add</button>
+    <button type="button"onclick="Sub()">Sub</button>
+    <button type="button"onclick="Mul()">Mul</button>
+    <button type="button"onclick="Div()">Div</button>
+
+</body>
+</html>

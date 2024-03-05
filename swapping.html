@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // using third variable  swapping 
+        /*
+        var a = 5;
+        var b = 20;
+        document.write(`Before Swapping a = ${a} and b = ${b}`);
+        var temp = a;
+        a = b;
+        b = temp;
+        document.write("<br>");
+        document.write(`after Swapping a = ${a} and b = ${b}`)
+        */
+        
+        // without using  third variable swapping
+        
+        var a = 5;
+        var b = 20;
+        document.write(`Before Swapping a = ${a} and b = ${b}`);
+        a = a + b; // a = 25 b = 20
+        b = a - b; // a = 25 b = 5 
+        a = a - b; // a = 20 b = 5
+        document.write("<br>");
+        document.write(`after Swapping a = ${a} and b = ${b}`)
+       
+
+
+
+
+    </script>
+</body>
+</html>
